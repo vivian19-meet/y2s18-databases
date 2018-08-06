@@ -14,7 +14,12 @@ class Knowledge(Base):
 	# topic of the article. The last column will be
 	# an integer, representing your rating of the article.
    __tablename__ = 'know'
-   name = Column(string, primary_key=True)
+   name = Column(String, primary_key=True)
    wiki_article = Column(String)
-   year = Column(Integer)
-   finished_lab = Column(Boolean)
+   topic= Column(String)
+   rating = Column(Integer)
+    def __repr__(self):
+    	return ("if you want to learn about: {}\n"
+        	"you should look at the wiki article called: {} \n"
+        	"We gave this article a rating of: {}").format(
+         	self.topic, self.wiki_article, self.rating)

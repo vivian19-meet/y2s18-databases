@@ -8,20 +8,19 @@ Base.metadata.create_all(engine)
 DBSession = sessionmaker(bind=engine)
 session = DBSession()
 
-def add_article():
-	pass
-
+def add_article(name,wiki_article,topic,rating):
+    self=Knowledge(name,wiki_article,topic,)
 def query_all_articles():
-	pass
-
+    pass	
 def query_article_by_topic():
-	pass
+    pass
 
 def delete_article_by_topic():
-	pass
+    pass
 
 def delete_all_articles():
-	pass
+    pass
 
 def edit_article_rating():
-	pass
+    pass
+add_article(v,"canada wiki")
