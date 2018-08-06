@@ -13,5 +13,8 @@ class Knowledge(Base):
 	# The third column will be a string representing the 
 	# topic of the article. The last column will be
 	# an integer, representing your rating of the article.
-
-	pass
+   __tablename__ = 'know'
+   name = Column(string, primary_key=True)
+   wiki_article = Column(String)
+   year = Column(Integer)
+   finished_lab = Column(Boolean)
